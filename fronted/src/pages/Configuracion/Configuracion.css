@@ -1,0 +1,33 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 480px);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5dac2;
+  font-size: 14px;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-row__label {
+  color: #8c8272;
+}
+
+.profile-row__value {
+  font-weight: 700;
+  color: #2a2119;
+}
+
+.danger-zone {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid #e5dac2;
+}

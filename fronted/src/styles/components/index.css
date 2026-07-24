@@ -1,0 +1,15 @@
+/* =========================================================
+   EVANSONG — Componentes UI
+   Antes vivían todos juntos en components.css.
+   Ahora cada categoría tiene su propio archivo:
+   ========================================================= */
+
+@import './botones.css';
+@import './tarjetas.css';
+@import './formularios.css';
+@import './tabla.css';
+@import './badges.css';
+@import './toolbar.css';
+@import './modal.css';
+@import './alertas.css';
+@import './vacios.css';

@@ -1,0 +1,94 @@
+.auth-card {
+  background: #e9d7b0a8;
+  border-radius: var(--radius-lg);
+  padding: var(--space-7) var(--space-6);
+  width: 100%;
+  max-width: 380px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle {
+  color: #8c8272;
+  font-size: 14px;
+  margin-bottom: var(--space-6);
+}
+
+.auth-form {
+  text-align: left;
+}
+
+.auth-footer-link {
+  margin-top: var(--space-5);
+  font-size: 13.5px;
+  color: #5c5347;
+}
+
+.auth-footer-link a,
+.auth-forgot {
+  color: #0490EE;
+  font-weight: 700;
+}
+
+.auth-forgot {
+  display: block;
+  text-align: right;
+  font-size: 12.5px;
+  margin: -8px 0 var(--space-4);
+}
+
+.auth-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* ---------- Layout con logo a un lado (Login / Registro) ---------- */
+.auth-split {
+  min-height: 100vh;
+  display: flex;
+}
+
+.auth-split__side {
+  flex: 0 0 380px;
+  background: #f2ead9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: var(--space-6);
+}
+
+.auth-split__brand {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #91702e;
+}
+
+.auth-split__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffdf8;
+  padding: var(--space-5);
+}
+
+@media (max-width: 760px) {
+  .auth-split {
+    flex-direction: column;
+  }
+  .auth-split__side {
+    flex: 0 0 auto;
+    padding: var(--space-5);
+  }
+}

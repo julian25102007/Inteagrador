@@ -1,0 +1,338 @@
+.cantos-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  border-bottom: 1px solid #e5dac2;
+}
+
+.cantos-tab {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8c8272;
+  border-bottom: 2px solid transparent;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.cantos-tab.is-active {
+  color: #3E2F1C;
+  border-bottom-color: #c9a15a;
+}
+
+.filters-row {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+.filter-chip {
+  border: 1px solid #e5dac2;
+  background: #fffdf8;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5c5347;
+}
+
+.filter-chip:hover {
+  border-color: #c9a15a;
+}
+
+/* Listas de cantos (colecciones temáticas) */
+.listas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+
+.lista-card {
+  background: #fffdf8;
+  border: 1px solid #B89E6A;
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.lista-card:hover {
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.lista-card__title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: #3E2F1C;
+}
+
+.lista-card__desc {
+  font-size: 13px;
+  color: #5c5347;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.lista-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lista-card__count {
+  align-self: flex-start;
+  background: #f3e7cc;
+  color: #B89E6A;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.lista-card__actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* Selector de cantos (formularios de lista/esquema) */
+.canto-suggestions {
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-sm);
+  margin-top: 6px;
+  max-height: 160px;
+  overflow-y: auto;
+  background: #fffdf8;
+}
+
+.canto-suggestions__item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 13.5px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #f2ead9;
+  color: #2a2119;
+}
+
+.canto-suggestions__item:last-child {
+  border-bottom: none;
+}
+
+.canto-suggestions__item:hover {
+  background: #f3e7cc;
+}
+
+.selected-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.selected-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f3e7cc;
+  color: #6b1e2f;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.selected-chip button {
+  background: none;
+  border: none;
+  color: #6b1e2f;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Constructor de momentos (formulario de esquema) */
+.btn-add-momento {
+  width: 100%;
+  background: #e3c98a;
+  color: #3E2F1C;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-weight: 700;
+  margin: 12px 0 16px;
+}
+
+.btn-add-momento:hover {
+  background: #c9a15a;
+}
+
+.momento-card {
+  position: relative;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-md);
+  background: #fffdf8;
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.momento-card__fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-3);
+}
+
+.momento-card .search-input {
+  min-width: 0;
+}
+
+.momento-card__remove {
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1px solid #e5c9c2;
+  background: #fbeeea;
+  color: #a5432f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.momento-card__remove:hover {
+  background: #f6d9d1;
+}
+.momento-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  background: #f3e7cc;
+  border-radius: 999px;
+  padding: 12px 20px;
+  margin-bottom: var(--space-3);
+}
+
+.momento-chip__label {
+  background: none;
+  border: none;
+  text-align: left;
+  color: #6b1e2f;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  flex: 1;
+}
+
+.momento-chip__remove {
+  background: none;
+  border: none;
+  color: #6b1e2f;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.momento-chip__remove:hover {
+  color: #a5432f;
+}
+
+/* Esquemas de misa */
+.esquemas-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.esquema-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffdf8;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+}
+
+.esquema-row__title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: #B89E6A;
+}
+
+.esquema-row__desc {
+  font-size: 13px;
+  color: #8c8272;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  color: #a5432f;
+}
+
+/* Detalle de canto (letra y acordes) */
+.canto-detail-card {
+  background: #fffdf8;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.canto-detail-meta {
+  display: flex;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+  color: #8c8272;
+  font-size: 13px;
+  margin-bottom: var(--space-5);
+}
+
+.canto-detail-meta strong {
+  color: #2a2119;
+}
+
+.canto-lyrics {
+  white-space: pre-wrap;
+  font-family: var(--font-body);
+  line-height: 2;
+  font-size: 15px;
+  background: #faf6ee;
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
+.chord {
+  color: #F8F2E5;
+  font-weight: 800;
+}
+
+.canto-detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .canto-detail-layout {
+    grid-template-columns: 1fr;
+  }
+}

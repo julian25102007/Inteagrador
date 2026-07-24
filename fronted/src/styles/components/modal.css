@@ -1,0 +1,62 @@
+/* ---------- Modal ---------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(42, 33, 25, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: var(--space-4);
+}
+
+.modal {
+  background: #fffdf8;
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-card);
+}
+
+.modal h3 {
+  margin-bottom: var(--space-3);
+}
+
+.modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+/* Variante compacta: usada por los formularios de Cantos y Lista
+   para reducir su tamaño/escala sin afectar al modal de Esquemas. */
+.modal--compact {
+  max-width: 360px;
+  padding: var(--space-5);
+}
+
+.modal--compact h3 {
+  font-size: 16px;
+  margin-bottom: var(--space-2);
+}
+
+.modal--compact .field {
+  margin-bottom: var(--space-3);
+}
+
+.modal--compact .field label {
+  font-size: 12px;
+}
+
+.modal--compact .field input,
+.modal--compact .field select,
+.modal--compact .field textarea {
+  padding: 7px 10px;
+  font-size: 13px;
+}
+
+.modal--compact .modal__actions {
+  margin-top: var(--space-3);
+}

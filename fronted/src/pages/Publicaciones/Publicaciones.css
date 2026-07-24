@@ -1,0 +1,66 @@
+.post-card {
+  background: #fffdf8;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.post-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.post-card__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f3e7cc;
+  color: #6b1e2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.post-card__author {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.post-card__time {
+  font-size: 12px;
+  color: #8c8272;
+}
+
+.post-card__tag {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b1e2f;
+  background: #f3e7cc;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.post-card__title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  color: #3d0f1c;
+  margin-bottom: 6px;
+}
+
+.post-card__body {
+  font-size: 14px;
+  color: #5c5347;
+  line-height: 1.6;
+}
+
+.post-card__actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}

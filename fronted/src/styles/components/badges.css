@@ -1,0 +1,33 @@
+/* ---------- Badges (iconos/etiquetas de diferente color) ---------- */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-baja {
+  background: #e5f0e6;
+  color: #4c7a52;
+}
+.badge-media {
+  background: #fbf1dd;
+  color: #b3822e;
+}
+.badge-alta {
+  background: #f6e2dd;
+  color: #a5432f;
+}
+.badge-uso {
+  background: #e3ecf5;
+  color: #2f5e91;
+}
+.badge-buen {
+  background: #e5f0e6;
+  color: #4c7a52;
+}
+.badge-mal {
+  background: #f6e2dd;
+  color: #a5432f;
+}

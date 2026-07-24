@@ -1,0 +1,19 @@
+/* ---------- Alertas / toasts ---------- */
+.toast {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  background: #fff;
+  border: 2px solid #63C903;
+  color: #63C903;
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  font-size: 14px;
+  z-index: 60;
+  border-left: 4px solid #63C903;
+}
+
+.toast.error {
+  border-left-color: #a5432f;
+}

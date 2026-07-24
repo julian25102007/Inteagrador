@@ -1,0 +1,54 @@
+/* ---------- Botones ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.1s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn-primary {
+  background: #F8F2E5;
+  color: #3E2F1C;
+  border: 2px solid #3E2F1C; /* Borde de 2px con el mismo color del texto */
+}
+.btn-primary:hover {
+  background: #B89E6A;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-gold {
+  background: #c9a15a;
+  color: #B89E6A;
+}
+.btn-gold:hover {
+  background: #e3c98a;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #B89E6A;
+  border: 1px solid #3E2F1C;
+}
+.btn-ghost:hover {
+  background: #f2ead9;
+}
+
+.btn-danger {
+  background: #d24124;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

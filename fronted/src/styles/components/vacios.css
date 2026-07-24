@@ -1,0 +1,11 @@
+/* ---------- Vacíos ---------- */
+.empty-state {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+  color: #8c8272;
+}
+
+.empty-state h3 {
+  color: #5c5347;
+  margin-bottom: var(--space-2);
+}

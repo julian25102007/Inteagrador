@@ -1,0 +1,38 @@
+/* ---------- Tabla ---------- */
+.table-wrap {
+  overflow-x: auto;
+  background: #fffdf8;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-md);
+}
+
+table.evan-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.evan-table thead th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #8c8272;
+  padding: 14px var(--space-4);
+  border-bottom: 1px solid #e5dac2;
+  background: #f2ead9;
+}
+
+.evan-table tbody td {
+  padding: 14px var(--space-4);
+  border-bottom: 1px solid #e5dac2;
+  color: #2a2119;
+}
+
+.evan-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.evan-table tbody tr:hover {
+  background: #faf6ee;
+}

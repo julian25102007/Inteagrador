@@ -1,0 +1,49 @@
+/* ---------- Tarjetas (cuadros) ---------- */
+.card {
+  background: #fffdf8;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.card-pad {
+  padding: var(--space-5);
+}
+
+.stat-card {
+  background: #fffdf8;
+  border: 1px solid #e5dac2;
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-card__label {
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #8c8272;
+  font-weight: 700;
+}
+
+.stat-card__value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: #3E2F1C;
+}
+
+.stat-card__value.positive {
+  color: #4c7a52;
+}
+.stat-card__value.negative {
+  color: #a5432f;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}

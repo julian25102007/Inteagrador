@@ -1,0 +1,29 @@
+# =====================================================
+# Configuracion de Evansong Backend (Javalin)
+# =====================================================
+
+# db.type acepta: mysql  o  postgresql
+db.type=mysql
+
+db.host=localhost
+db.port=3306
+db.name=eva
+db.user=root
+db.password=CAMBIA_ESTO
+
+# Puerto en el que corre el servidor Javalin
+server.port=3000
+
+# =====================================================
+# Seguridad
+# =====================================================
+# Clave secreta para firmar los JWT. CAMBIA este valor en produccion
+# por una cadena larga y aleatoria (por ejemplo generada con:
+# openssl rand -base64 48). Nunca subas la clave real de produccion a git.
+jwt.secret=CAMBIA_ESTO_POR_UNA_CLAVE_LARGA_ALEATORIA
+# Duracion del token en horas
+jwt.expiracion.horas=12
+
+# Origenes permitidos para CORS (el/los dominios donde corre el frontend),
+# separados por coma. Ejemplo local: http://localhost:5173
+cors.origenes=http://localhost:5173,http://127.0.0.1:5173
